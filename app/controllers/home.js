@@ -1,3 +1,5 @@
 module.exports = (app) => {
-  app.route('/user/profile').get(app.controllers.user.profile);
+  app.route('/').get((req, res) => {
+    res.render('index', { title: 'Express' });
+  });
 };

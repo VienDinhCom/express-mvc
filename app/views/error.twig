@@ -1,1 +1,6 @@
-sdafasdfasdf
+{% extends "layout/base.twig" %}
+
+{% block content %}
+  <h1>Error {{error.status}}: {{message}}</h1>
+  <pre>{{error.stack}}</pre>
+{% endblock %}
