@@ -1,0 +1,1 @@
+DEBUG=web-app:* npm start

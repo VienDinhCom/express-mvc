@@ -1,23 +1,5 @@
-module.exports = () => ({
+module.exports = (app) => {
+  app.route('/user/profile').get(() => {
 
-  getItem: (req, res) => {
-    res.render('home', { name: 'World' });
-  },
-
-  getList: () => {
-
-  },
-
-  addItem: () => {
-
-  },
-
-  editItem: () => {
-
-  },
-
-  delItem: () => {
-
-  },
-
-});
+  });
+};
